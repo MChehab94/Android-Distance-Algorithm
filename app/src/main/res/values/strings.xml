@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DistanceAlgorithm</string>
+
+    <string-array name="spinner_distance_algorithms">
+        <item>Euclidean</item>
+        <item>Manhattan</item>
+        <item>Minkowski</item>
+    </string-array>
+
+    <string name="hint_edit_text_x1">X1</string>
+    <string name="hint_edit_text_y1">Y1</string>
+    <string name="hint_edit_text_x2">X2</string>
+    <string name="hint_edit_text_y2">Y2</string>
+    <string name="hint_edit_text_minkowski_p">Power P</string>
+
+</resources>

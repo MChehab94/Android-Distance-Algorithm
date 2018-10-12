@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinnerAlgorithm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_distance_algorithms"
+        />
+
+    <EditText
+        android:id="@+id/editTextMinkowski"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_weight="0"
+        android:hint="@string/hint_edit_text_minkowski_p"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextX1"
+            style="@style/editText"
+            android:hint="@string/hint_edit_text_x1"/>
+
+        <EditText
+            android:id="@+id/editTextY1"
+            style="@style/editText"
+            android:hint="@string/hint_edit_text_y1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextX2"
+            style="@style/editText"
+            android:hint="@string/hint_edit_text_x2"/>
+
+        <EditText
+            android:id="@+id/editTextY2"
+            style="@style/editText"
+            android:hint="@string/hint_edit_text_y2"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Distance"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+</LinearLayout>
